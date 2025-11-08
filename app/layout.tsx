@@ -10,9 +10,9 @@ import { Toaster } from "@/components/ui/toaster"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "Creative Developer Portfolio",
+  title: "Saurabh Singh",
   description: "Animated portfolio showcasing creative development work",
-  generator: "v0.app",
+  generator: "Saurabh Singh",
 }
 
 export default function RootLayout({
