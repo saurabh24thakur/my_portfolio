@@ -15,15 +15,15 @@ const projects = [
     tags: ["Expressjs" , "Node js","React js","mongoDB","Socket.io","Tailwind CSS"],
     liveUrl: "https://crushgram-app-frontend.onrender.com/",
     githubUrl: "https://github.com/saurabh24thakur/crushgram_app",
-  }
-//   {
-//     title: "AI-Powered Dashboard",
-//     description: "Interactive analytics dashboard with machine learning insights and real-time data visualization.",
-//     image: "/ai-analytics-dashboard.png",
-//     tags: ["TypeScript", "D3.js", "Python", "TensorFlow"],
-//     liveUrl: "#",
-//     githubUrl: "#",
-//   },
+  },
+  {
+    title: "HackHub-Hackthon management app",
+    description: "Interactive hackthon management app create to organise hackthons in efficient manner",
+    image: "/hackhub.png",
+    tags: ["TypeScript", "Node js","React js","mongoDB","Tailwind CSS"],
+    liveUrl: "https://hackhubfinal.vercel.app/",
+    githubUrl: "https://github.com/saurabh24thakur/hackhub",
+  },
 //   {
 //     title: "Mobile Banking App",
 //     description: "Secure mobile banking application with biometric authentication and intuitive user experience.",

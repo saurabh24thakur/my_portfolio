@@ -3,8 +3,8 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
-import { Code, BookOpen, Rocket, Award, ExternalLink, GraduationCap } from "lucide-react"
-import Image from "next/image"
+import { Code, BookOpen, Rocket, Award, ExternalLink, GraduationCap } from "lucide-react";
+import Image from "next/image";
 
 const stats = [
   { icon: Code, label: "Projects Built", value: "15+" },
