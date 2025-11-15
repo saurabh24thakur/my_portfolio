@@ -21,31 +21,31 @@ const certifications = [
     skills: ["React", "Node.js", "MongoDB", "Express"],
     credentialUrl: "#",
     logo: "/openX.png", // Add your image path here
-  },
-  {
-    title: "AWS Cloud Practitioner",
-    issuer: "Amazon Web Services",
-    date: "2024",
-    skills: ["Cloud Computing", "AWS Services", "Security", "Architecture"],
-    credentialUrl: "#",
-    logo: "/openX.png", // Add your image path here
-  },
-  {
-    title: "Data Structures & Algorithms",
-    issuer: "Udemy",
-    date: "2023",
-    skills: ["DSA", "Problem Solving", "Time Complexity", "Java"],
-    credentialUrl: "#",
-    logo: "/openX.png", // Add your image path here
-  },
-  {
-    title: "Python for Data Science",
-    issuer: "IBM - edX",
-    date: "2023",
-    skills: ["Python", "NumPy", "Pandas", "Data Analysis"],
-    credentialUrl: "#",
-    logo: "/openX.png", // Add your image path here
-  },
+  }
+  // {
+  //   title: "AWS Cloud Practitioner",
+  //   issuer: "Amazon Web Services",
+  //   date: "2024",
+  //   skills: ["Cloud Computing", "AWS Services", "Security", "Architecture"],
+  //   credentialUrl: "#",
+  //   logo: "/openX.png", // Add your image path here
+  // },
+  // {
+  //   title: "Data Structures & Algorithms",
+  //   issuer: "Udemy",
+  //   date: "2023",
+  //   skills: ["DSA", "Problem Solving", "Time Complexity", "Java"],
+  //   credentialUrl: "#",
+  //   logo: "/openX.png", // Add your image path here
+  // },
+  // {
+  //   title: "Python for Data Science",
+  //   issuer: "IBM - edX",
+  //   date: "2023",
+  //   skills: ["Python", "NumPy", "Pandas", "Data Analysis"],
+  //   credentialUrl: "#",
+  //   logo: "/openX.png", // Add your image path here
+  // },
 ]
 
 export function AboutSection() {

@@ -8,6 +8,15 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 const projects = [
   {
+    title: "MockMate- An Ai Mock Interview platform",
+    description:
+      " An Ai Mock Interview platform with real time feedback and dashboard",
+    image: "/mockInterview.png",
+    tags: ["Expressjs" , "Node js","React js","mongoDB","Tailwind CSS","Generative AI","Gemini"],
+    liveUrl: "https://ai-mock-interview-frontend-2.pages.dev/",
+    githubUrl: "https://github.com/saurabh24thakur/AI_mock_Interview_.git",
+  },
+  {
     title: "CrushGram-An Social media Application ",
     description:
       "An Social media Application inspired by Instagram and Twitter .",
@@ -23,39 +32,11 @@ const projects = [
     tags: ["TypeScript", "Node js","React js","mongoDB","Tailwind CSS"],
     liveUrl: "https://hackhubfinal.vercel.app/",
     githubUrl: "https://github.com/saurabh24thakur/hackhub",
+    
   },
-//   {
-//     title: "Mobile Banking App",
-//     description: "Secure mobile banking application with biometric authentication and intuitive user experience.",
-//     image: "/mobile-banking-app.png",
-//     tags: ["React Native", "Node.js", "MongoDB", "JWT"],
-//     liveUrl: "#",
-//     githubUrl: "#",
-//   },
-//   {
-//     title: "Creative Portfolio",
-//     description: "Animated portfolio website showcasing creative work with smooth scroll interactions.",
-//     image: "/creative-portfolio-website.png",
-//     tags: ["Next.js", "Framer Motion", "GSAP", "CSS"],
-//     liveUrl: "#",
-//     githubUrl: "#",
-//   },
-//   {
-//     title: "Social Media Platform",
-//     description: "Full-stack social platform with real-time messaging, content sharing, and community features.",
-//     image: "/social-media-interface.png",
-//     tags: ["Vue.js", "Express", "Socket.io", "PostgreSQL"],
-//     liveUrl: "#",
-//     githubUrl: "#",
-//   },
-//   {
-//     title: "Task Management Tool",
-//     description: "Collaborative project management tool with team workflows and progress tracking.",
-//     image: "/task-management-dashboard.png",
-//     tags: ["Angular", "Firebase", "Material UI", "PWA"],
-//     liveUrl: "#",
-//     githubUrl: "#",
-//   },
+  
+
+
 ]
 
 export function PortfolioSection() {
@@ -102,12 +83,17 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <Button size="sm" variant="secondary" className="bg-white/90 hover:bg-white">
+            <Button size="sm" variant="secondary" className="bg-white/90 hover:bg-white" onClick={() => window.open(project.liveUrl, "_blank", "noopener,noreferrer")}>
               <ExternalLink className="h-4 w-4" />
             </Button>
-            <Button size="sm" variant="secondary" className="bg-white/90 hover:bg-white">
-              <Github className="h-4 w-4" />
-            </Button>
+            <Button
+  size="sm"
+  variant="secondary"
+  className="bg-white/90 hover:bg-white"
+  onClick={() => window.open(project.githubUrl, "_blank", "noopener,noreferrer")}
+>
+  <Github className="h-4 w-4" />
+</Button>
           </div>
         </div>
 
