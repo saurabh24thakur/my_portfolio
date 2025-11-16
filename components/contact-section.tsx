@@ -12,19 +12,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@example.com",
-    href: "mailto:hello@example.com",
+    value: "saurabh5532u@gmail.com",
+    href: "mailto:saurabh5532u@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "NaN",
+    href: "NaN",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "GLA university,Mathura",
     href: "#",
   },
 ]
