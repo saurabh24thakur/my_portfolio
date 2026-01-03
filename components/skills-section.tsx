@@ -3,7 +3,7 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { Code, Palette, Smartphone, Database, Cloud, Zap } from "lucide-react"
+import { Code, Palette, Smartphone, Database, Cloud, Zap,Brain } from "lucide-react"
 
 const skillCategories = [
   {
@@ -35,6 +35,12 @@ const skillCategories = [
     title: "Tools & Others",
     icon: Zap,
     skills: ["Git"],
+    color: "text-accent",
+  },
+  {
+    title: "Generative AI",
+    icon: Brain,
+    skills: ["LangChain","LangGraph","Pinecone","OpenAI","Gemini Api"],
     color: "text-accent",
   },
 ]

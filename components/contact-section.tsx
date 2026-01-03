@@ -45,16 +45,22 @@ export function ContactSection() {
     setIsLoading(true)
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://formsubmit.co/ajax/saurabh5532u@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify({ name, email, subject, message }),
-      });
+        body: JSON.stringify({
+          name,
+          email,
+          subject,
+          message,
+        }),
+      })
 
       if (response.ok) {
-        toast({ title: "Success", description: "Your message has been sent!" })
+        toast({ title: "Success", description: "Your message has been sent! If this is your first time, please check your email to activate." })
         setName("")
         setEmail("")
         setSubject("")
@@ -197,9 +203,8 @@ function ContactInfoItem({
 
   return (
     <div
-      className={`flex items-center space-x-4 p-4 rounded-lg hover:bg-muted/50 transition-all duration-300 ${
-        isVisible ? "animate-fade-in-left" : "opacity-0 translate-x-8"
-      }`}
+      className={`flex items-center space-x-4 p-4 rounded-lg hover:bg-muted/50 transition-all duration-300 ${isVisible ? "animate-fade-in-left" : "opacity-0 translate-x-8"
+        }`}
       style={{ transitionDelay: `${index * 100}ms` }}
     >
       <div className="p-3 bg-primary/10 rounded-lg">

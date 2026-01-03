@@ -7,37 +7,37 @@ import { Code, BookOpen, Rocket, Award, ExternalLink, GraduationCap } from "luci
 import Image from "next/image";
 
 const stats = [
-  { icon: Code, label: "Projects Built", value: "15+" },
-  { icon: BookOpen, label: "Technologies Learning", value: "8+" },
-  { icon: Award, label: "Hackathons Joined", value: "3" },
-  { icon: Rocket, label: "Currently Exploring", value: "AI/ML" },
+  { icon: Code, label: "Projects Built", value: "3+" },
+  { icon: BookOpen, label: "Technologies Learning", value: "10+" },
+  { icon: Award, label: "Hackathons Joined", value: "3+" },
+  { icon: Rocket, label: "Currently Exploring", value: "Artificial Intelligence" },
 ]
 
 const certifications = [
   {
-    title: "Full Stack Web Development",
-    issuer: "Coursera - Meta",
+    title: "React JS by Knowledge Gate",
+    issuer: "React-Knowledge Gate",
     date: "2024",
-    skills: ["React", "Node.js", "MongoDB", "Express"],
+    skills: ["React JS"],
     credentialUrl: "#",
-    logo: "/openX.png", // Add your image path here
-  }
-  // {
-  //   title: "AWS Cloud Practitioner",
-  //   issuer: "Amazon Web Services",
-  //   date: "2024",
-  //   skills: ["Cloud Computing", "AWS Services", "Security", "Architecture"],
-  //   credentialUrl: "#",
-  //   logo: "/openX.png", // Add your image path here
-  // },
-  // {
-  //   title: "Data Structures & Algorithms",
-  //   issuer: "Udemy",
-  //   date: "2023",
-  //   skills: ["DSA", "Problem Solving", "Time Complexity", "Java"],
-  //   credentialUrl: "#",
-  //   logo: "/openX.png", // Add your image path here
-  // },
+    logo: "/react.jpg", // Add your image path here
+  },
+  {
+    title: "AWS Solution Architecture",
+    issuer: "Amazon Web Services",
+    date: "2024",
+    skills: ["Cloud Computing", "AWS Services", "Security", "Architecture"],
+    credentialUrl: "#",
+    logo: "/aws-solution-architecture.png", // Add your image path here
+  },
+  {
+    title: "Generative AI for All",
+    issuer: "Physics Wallah",
+    date: "2025",
+    skills: ["Microsoft Copilot"],
+    credentialUrl: "#",
+    logo: "/genAi_cert_ms-pw.png", // Add your image path here
+  },
   // {
   //   title: "Python for Data Science",
   //   issuer: "IBM - edX",
@@ -61,8 +61,7 @@ export function AboutSection() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate B.Tech student diving deep into the world of web development. Currently exploring modern technologies 
-            and building projects that challenge me to grow. I believe in learning by doing and love turning ideas into reality through code.
+          I am a Full-Stack Developer specializing in the MERN stack, dedicated to building scalable, high-performance web applications from the ground up. Beyond crafting robust digital products, I am an active contributor to the Open Source (OSS) ecosystem, where I focus on refining shared tools and collaborating on community-driven codebases. My approach combines technical precision in MongoDB, Express, React, and Node.js with a commitment to transparent, collaborative development that pushes the boundaries of modern web standards.
           </p>
         </div>
 
