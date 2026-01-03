@@ -17,7 +17,7 @@ const certifications = [
   {
     title: "React JS by Knowledge Gate",
     issuer: "React-Knowledge Gate",
-    date: "2024",
+    date: "2025",
     skills: ["React JS"],
     credentialUrl: "#",
     logo: "/react.jpg", // Add your image path here
@@ -25,7 +25,7 @@ const certifications = [
   {
     title: "AWS Solution Architecture",
     issuer: "Amazon Web Services",
-    date: "2024",
+    date: "2026",
     skills: ["Cloud Computing", "AWS Services", "Security", "Architecture"],
     credentialUrl: "#",
     logo: "/aws-solution-architecture.png", // Add your image path here
@@ -38,14 +38,14 @@ const certifications = [
     credentialUrl: "#",
     logo: "/genAi_cert_ms-pw.png", // Add your image path here
   },
-  // {
-  //   title: "Python for Data Science",
-  //   issuer: "IBM - edX",
-  //   date: "2023",
-  //   skills: ["Python", "NumPy", "Pandas", "Data Analysis"],
-  //   credentialUrl: "#",
-  //   logo: "/openX.png", // Add your image path here
-  // },
+  {
+    title: "Hacktoberfest Supercontributer",
+    issuer: "Hacktoberfest",
+    date: "2025",
+    skills: ["React JS","Node JS","MongoDB","Express","Git "],
+    credentialUrl: "#",
+    logo: "/hacktoberfest-supercontributer.png", // Add your image path here
+  },
 ]
 
 export function AboutSection() {
