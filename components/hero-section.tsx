@@ -54,9 +54,14 @@ export function HeroSection() {
           </h1>
 
           {/* Role */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-muted-foreground mb-10">
-            Full Stack Developer
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-muted-foreground mb-4">
+            Full Stack & Generative AI Engineer
           </h2>
+
+          {/* Tagline */}
+          <p className="text-lg md:text-xl text-muted-foreground/80 max-w-3xl mx-auto mb-10 leading-relaxed">
+            Crafting scalable <span className="text-primary font-medium">MERN Stack</span> & <span className="text-primary font-medium">Next.js</span> web applications, combined with robust <span className="text-accent font-medium">Generative AI</span> architectures, high-performance <span className="text-accent font-medium">RAG Systems</span>, autonomous <span className="text-accent font-medium">AI Agents</span>, and optimized <span className="text-accent font-medium">Vector Databases</span> using <span className="text-primary font-medium">Python</span> and TypeScript.
+          </p>
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-14">

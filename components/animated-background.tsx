@@ -1,11 +1,21 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { useParallax } from "@/hooks/use-advanced-scroll"
 
 export function AnimatedBackground() {
+  const [mounted, setMounted] = useState(false)
   const offset1 = useParallax(0.2)
   const offset2 = useParallax(0.3)
   const offset3 = useParallax(0.1)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
 
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">

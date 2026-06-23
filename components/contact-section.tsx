@@ -18,13 +18,17 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "NaN",
-    href: "NaN",
+
+    value: "+91 6396118274",
+    href: "tel:+91 6396118274",
+
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "GLA university,Mathura",
+
+    value: "Mathura, Uttar Pradesh, India",
+
     href: "#",
   },
 ]
