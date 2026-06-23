@@ -6,7 +6,6 @@ import { ExperienceSection } from "@/components/experience-section"
 import { AboutSection } from "@/components/about-section"
 import { GithubSection } from "@/components/github-section"
 import { ContactSection } from "@/components/contact-section"
-import { GithubSection } from "@/components/github-section"
 
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
       <ExperienceSection />
       <GithubSection />
       <AboutSection />
-      <GithubSection />
       <ContactSection />
     </main>
   )
