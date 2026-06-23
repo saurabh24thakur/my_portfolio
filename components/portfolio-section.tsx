@@ -9,6 +9,7 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 const projects = [
   {
+
     title: "MockMate - AI Mock Interview Platform",
     description: "An AI Mock Interview platform with real-time audio transcripts, feedback, and scoring dashboards.",
     image: "/mockInterview.png",
@@ -30,10 +31,12 @@ const projects = [
   {
     title: "CrushGram - Social Media Application",
     description: "A full-featured social platform inspired by Instagram and Twitter, incorporating real-time feeds and messaging.",
+
     image: "/homepage.png",
     tags: ["Expressjs", "Node.js", "React.js", "MongoDB", "Socket.io", "Tailwind CSS"],
     category: "fullstack",
     liveUrl: "https://crushgram-app-frontend.onrender.com/",
+
     githubUrl: "https://github.com/saurabh24thakur/crushgram_app"
   },
   {
@@ -45,6 +48,7 @@ const projects = [
     liveUrl: "https://hackhubfinal.vercel.app/",
     githubUrl: "https://github.com/saurabh24thakur/hackhub"
   }
+
 ]
 
 export function PortfolioSection() {
@@ -118,6 +122,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+
             <Button
               size="sm"
               variant="secondary"
@@ -140,6 +145,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
             >
               <Github className="h-4 w-4" />
             </Button>
+
           </div>
         </div>
 

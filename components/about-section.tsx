@@ -7,10 +7,12 @@ import { Code, BookOpen, Rocket, Award, ExternalLink, GraduationCap } from "luci
 import Image from "next/image";
 
 const stats = [
-  { icon: Code, label: "Projects Built", value: "15+" },
-  { icon: BookOpen, label: "LLMs & Vectors", value: "8+" },
+
+  { icon: Code, label: "Projects Built", value: "3+" },
+  { icon: BookOpen, label: "Technologies Learning", value: "10+" },
   { icon: Award, label: "Hackathons Joined", value: "3+" },
-  { icon: Rocket, label: "Focus Systems", value: "RAG & Agents" },
+  { icon: Rocket, label: "Currently Exploring", value: "Artificial Intelligence" },
+
 ]
 
 const certifications = [
@@ -60,11 +62,13 @@ export function AboutSection() {
           className={`text-center mb-16 transition-all duration-1000 ${titleVisible ? "animate-fade-in-up" : "opacity-0 translate-y-8"}`}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
+
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6">
             I am a Full Stack & Generative AI Engineer specializing in the MERN stack, Next.js, and advanced LLM architectures. I bridge the gap between robust web development and state-of-the-art artificial intelligence by building production-ready AI applications, agentic workflows, and high-performance Retrieval-Augmented Generation (RAG) pipelines.
           </p>
           <p className="text-lg text-muted-foreground/80 max-w-3xl mx-auto leading-relaxed">
             With hands-on experience integrating LLM APIs (OpenAI, Gemini, Anthropic), developing orchestrations with LangChain and LangGraph, and optimizing search indexes across vector databases (Pinecone, ChromaDB, LanceDB, FAISS), I design end-to-end intelligent systems. I combine full-stack engineering practices with MLOps awareness and containerized deployments to deliver scalable, secure, and recruiter-friendly solutions.
+
           </p>
         </div>
 

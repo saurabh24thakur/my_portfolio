@@ -10,6 +10,7 @@ import { Toaster } from "@/components/ui/toaster"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
+
   title: "Saurabh Singh | Full Stack & Generative AI Engineer",
   description: "Portfolio of Saurabh Singh - Full Stack & Generative AI Engineer. Specializing in MERN stack, Next.js, Python, RAG systems, AI agents, LangChain/LangGraph, and scalable cloud solutions.",
   keywords: [
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     "AI Agent Developer",
     "Saurabh Singh"
   ],
+
   generator: "Saurabh Singh",
 }
 
