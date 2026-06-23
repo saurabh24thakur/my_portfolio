@@ -3,48 +3,48 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
-import { Code, BookOpen, Rocket, Award, ExternalLink, GraduationCap } from "lucide-react"
-import Image from "next/image"
+import { Code, BookOpen, Rocket, Award, ExternalLink, GraduationCap } from "lucide-react";
+import Image from "next/image";
 
 const stats = [
   { icon: Code, label: "Projects Built", value: "15+" },
-  { icon: BookOpen, label: "Technologies Learning", value: "8+" },
-  { icon: Award, label: "Hackathons Joined", value: "3" },
-  { icon: Rocket, label: "Currently Exploring", value: "AI/ML" },
+  { icon: BookOpen, label: "LLMs & Vectors", value: "8+" },
+  { icon: Award, label: "Hackathons Joined", value: "3+" },
+  { icon: Rocket, label: "Focus Systems", value: "RAG & Agents" },
 ]
 
 const certifications = [
   {
-    title: "Full Stack Web Development",
-    issuer: "Coursera - Meta",
-    date: "2024",
-    skills: ["React", "Node.js", "MongoDB", "Express"],
+    title: "React JS by Knowledge Gate",
+    issuer: "React-Knowledge Gate",
+    date: "2025",
+    skills: ["React JS"],
     credentialUrl: "#",
-    logo: "/openX.png", // Add your image path here
+    logo: "/react.jpg", // Add your image path here
   },
   {
-    title: "AWS Cloud Practitioner",
+    title: "AWS Solution Architecture",
     issuer: "Amazon Web Services",
-    date: "2024",
+    date: "2026",
     skills: ["Cloud Computing", "AWS Services", "Security", "Architecture"],
     credentialUrl: "#",
-    logo: "/openX.png", // Add your image path here
+    logo: "/aws-solution-architecture.png", // Add your image path here
   },
   {
-    title: "Data Structures & Algorithms",
-    issuer: "Udemy",
-    date: "2023",
-    skills: ["DSA", "Problem Solving", "Time Complexity", "Java"],
+    title: "Generative AI for All",
+    issuer: "Physics Wallah",
+    date: "2025",
+    skills: ["Microsoft Copilot"],
     credentialUrl: "#",
-    logo: "/openX.png", // Add your image path here
+    logo: "/genAi_cert_ms-pw.png", // Add your image path here
   },
   {
-    title: "Python for Data Science",
-    issuer: "IBM - edX",
-    date: "2023",
-    skills: ["Python", "NumPy", "Pandas", "Data Analysis"],
+    title: "Hacktoberfest Supercontributer",
+    issuer: "Hacktoberfest",
+    date: "2025",
+    skills: ["React JS","Node JS","MongoDB","Express","Git "],
     credentialUrl: "#",
-    logo: "/openX.png", // Add your image path here
+    logo: "/hacktoberfest-supercontributer.png", // Add your image path here
   },
 ]
 
@@ -60,9 +60,11 @@ export function AboutSection() {
           className={`text-center mb-16 transition-all duration-1000 ${titleVisible ? "animate-fade-in-up" : "opacity-0 translate-y-8"}`}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate B.Tech student diving deep into the world of web development. Currently exploring modern technologies 
-            and building projects that challenge me to grow. I believe in learning by doing and love turning ideas into reality through code.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6">
+            I am a Full Stack & Generative AI Engineer specializing in the MERN stack, Next.js, and advanced LLM architectures. I bridge the gap between robust web development and state-of-the-art artificial intelligence by building production-ready AI applications, agentic workflows, and high-performance Retrieval-Augmented Generation (RAG) pipelines.
+          </p>
+          <p className="text-lg text-muted-foreground/80 max-w-3xl mx-auto leading-relaxed">
+            With hands-on experience integrating LLM APIs (OpenAI, Gemini, Anthropic), developing orchestrations with LangChain and LangGraph, and optimizing search indexes across vector databases (Pinecone, ChromaDB, LanceDB, FAISS), I design end-to-end intelligent systems. I combine full-stack engineering practices with MLOps awareness and containerized deployments to deliver scalable, secure, and recruiter-friendly solutions.
           </p>
         </div>
 

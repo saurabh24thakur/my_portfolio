@@ -3,38 +3,67 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { Code, Palette, Smartphone, Database, Cloud, Zap } from "lucide-react"
+import { Code, Database, Cloud, Brain, Network, Cpu, Terminal, Settings } from "lucide-react"
 
 const skillCategories = [
   {
-    title: "Frontend Development",
+    title: "Generative AI",
+    icon: Brain,
+    skills: [
+      "OpenAI API",
+      "Gemini API",
+      "Claude API",
+      "LangChain",
+      "LangGraph",
+      "CrewAI",
+      "AutoGen",
+      "RAG Systems",
+      "Prompt Engineering",
+      "AI Agents",
+      "Hugging Face",
+    ],
+    color: "text-primary",
+  },
+  {
+    title: "Vector Databases",
+    icon: Network,
+    skills: ["Pinecone", "ChromaDB", "FAISS", "LanceDB"],
+    color: "text-accent",
+  },
+  {
+    title: "ML / AI Foundations",
+    icon: Cpu,
+    skills: ["Python", "NumPy", "Pandas", "Transformers", "Sentence Transformers"],
+    color: "text-primary",
+  },
+  {
+    title: "Frontend",
     icon: Code,
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Figma"],
+    color: "text-accent",
+  },
+  {
+    title: "Backend",
+    icon: Terminal,
+    skills: ["Node.js", "Express", "REST APIs", "Python", "Socket.io"],
     color: "text-primary",
   },
   {
-    title: "UI/UX Design",
-    icon: Palette,
-    skills: ["Figma", ],
-    color: "text-accent",
-  },
- 
-  {
-    title: "Backend Development",
+    title: "Database",
     icon: Database,
-    skills: ["Node.js", "Python", , "MongoDB", "MySQL", "REST APIs"],
+    skills: ["MongoDB", "MySQL", "PostgreSQL"],
     color: "text-accent",
   },
   {
-    title: "Cloud & DevOps",
+    title: "Cloud",
     icon: Cloud,
-    skills: ["AWS", "Vercel", "Docker", "CI/CD", "Kubernetes", "Serverless"],
+    skills: ["AWS", "Vercel", "Azure AI Services", "Serverless"],
     color: "text-primary",
   },
   {
-    title: "Tools & Others",
-    icon: Zap,
-    skills: ["Git"],
+    title: "DevOps",
+    icon: Settings,
+    skills: ["Docker", "CI/CD", "Kubernetes", "Git"],
     color: "text-accent",
   },
 ]
@@ -55,7 +84,7 @@ export function SkillsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {skillCategories.map((category, index) => (
             <SkillCard key={category.title} category={category} index={index} />
           ))}
